@@ -5,6 +5,7 @@
 
 # Xcode
 #
+*.lock
 *.pbxuser
 !default.pbxuser
 *.mode1v3
