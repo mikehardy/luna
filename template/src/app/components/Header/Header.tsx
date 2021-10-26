@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {ImageBackground, StyleSheet, Text} from 'react-native';
+import React, { FC } from 'react';
+import { ImageBackground, StyleSheet, Text } from 'react-native';
 
 export const Header: FC = () => {
   return (
@@ -7,8 +7,7 @@ export const Header: FC = () => {
       accessibilityRole='image'
       source={require('static/assets/logo.png')}
       style={styles.background}
-      imageStyle={styles.logo}
-    >
+      imageStyle={styles.logo}>
       <Text style={styles.text}>
         Welcome to
         {'\n'}

@@ -1,4 +1,4 @@
-import {ILink} from 'learn-more-types';
+import { ILink } from 'learn-more-types';
 
 export const links: ILink[] = [
   {

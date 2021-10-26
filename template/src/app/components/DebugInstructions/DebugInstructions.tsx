@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {StyleSheet, Text, Platform} from 'react-native';
+import React, { FC } from 'react';
+import { StyleSheet, Text, Platform } from 'react-native';
 
 export const DebugInstructions: FC = Platform.select({
   web: () => (

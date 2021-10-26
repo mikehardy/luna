@@ -1,18 +1,17 @@
-import React, {FC, Fragment} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View, Linking} from 'react-native';
-import {links} from 'static/constants';
+import React, { FC, Fragment } from 'react';
+import { StyleSheet, Text, TouchableOpacity, View, Linking } from 'react-native';
+import { links } from 'static/constants';
 
 export const LearnMoreLinks: FC = () => {
   return (
     <View style={styles.container}>
-      {links.map(({id, title, link, description}) => (
+      {links.map(({ id, title, link, description }) => (
         <Fragment key={id}>
           <View style={styles.separator} />
           <TouchableOpacity
             accessibilityRole='button'
             onPress={() => Linking.openURL(link)}
-            style={styles.linkContainer}
-          >
+            style={styles.linkContainer}>
             <Text style={styles.link}>{title}</Text>
             <Text style={styles.description}>{description}</Text>
           </TouchableOpacity>
